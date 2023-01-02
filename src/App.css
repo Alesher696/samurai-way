@@ -1,7 +1,28 @@
 .App {
-  text-align: left;
-}
-.Insiders{
-text-align: left;
+    text-align: left;
 }
 
+.Insiders {
+    text-align: left;
+}
+
+.Nav_bar {
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 4em;
+    background-color: #5182a8;
+    display: flex;
+}
+
+.Nav_bar div {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    padding-inline: 2em;
+}
+
+.Nav_bar div:hover {
+    background-color: #406885;
+}
