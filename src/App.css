@@ -1,21 +1,26 @@
 .App {
-    text-align: left;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "header header header"
+    "nav content content";
+    margin: 0 auto;
+    width: 1200px;
 }
 
-.Insiders {
-    text-align: left;
-}
 
-.Nav_bar {
+.Header {
     margin: 0;
     padding: 0;
-    width: 1920px;
+    width: 1200px;
     height: 4em;
     background-color: #5182a8;
     display: flex;
 }
 
-.Nav_bar div {
+.Header div {
     display: flex;
     align-items: center;
 
@@ -23,6 +28,35 @@
     padding-inline: 2em;
 }
 
-.Nav_bar div:hover {
+.Header div:hover {
     background-color: #406885;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.Header {
+    grid-area: header;
+    background-color: blue;
+}
+
+.Nav {
+    grid-area: nav;
+    background-color: #5b5b9d;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.nav-el{
+    width: 100%;
+    text-align: start;
+    margin-inline: 1em;
+}
+.Content {
+    grid-area: content;
+    background-color: #62bb46;
 }

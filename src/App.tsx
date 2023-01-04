@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import {log} from "util";
-import Insiders from './Insiders';
-import StarsInStar from './StarsInstar' ;
-import Nav_bar from "./Nav_bar";
+import {Header} from './Components/Header';
+import {Nav} from "./Components/Nav";
+import {Content} from "./Components/Content";
 
 
 function App() {
@@ -12,20 +11,12 @@ function App() {
 
 
         <div className="App">
-            <Nav_bar />
-            <p>Hello, samurai! Let's go!</p>
-            <DocTitle title="Profile" />
-            <DocTitle title="My friends" />
-            <StarsInStar value={3} />
-            <Insiders/>
-
-            <StarsInStar value={5} />
+            <Header/>
+            <Nav/>
+            <Content/>
         </div>
     );
 }
 
-function DocTitle(props: any) {
-    return <h1> {props.title}</h1>
-}
 
 export default App;

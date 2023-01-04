@@ -1,9 +1,9 @@
 import React from "react";
 
 
-function Nav_bar() {
+export function Header() {
     return (
-        <div className={'Nav_bar'}>
+        <div className={'Header'}>
             <div>Home</div>
             <div>Page</div>
             <div>Options</div>
@@ -13,7 +13,7 @@ function Nav_bar() {
 }
 
 
-export default Nav_bar;
+
 
 
 
