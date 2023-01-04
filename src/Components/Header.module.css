@@ -1,0 +1,25 @@
+.Header {
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 4em;
+    background-color: #5182a8;
+    display: flex;
+}
+
+.Header div {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    padding-inline: 2em;
+}
+
+.Header div:hover {
+    background-color: #406885;
+}
+
+.Header {
+    grid-area: header;
+    background-color: blue;
+}

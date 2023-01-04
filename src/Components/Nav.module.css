@@ -1,0 +1,13 @@
+
+.Nav {
+    grid-area: nav;
+    background-color: #5b5b9d;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.Nav .nav_el{
+    width: 100%;
+    text-align: start;
+    margin-inline: 1em;
+}

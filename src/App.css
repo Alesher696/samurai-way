@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .App {
     display: grid;
     grid-template-rows: 60px 1fr;
@@ -10,53 +15,3 @@
     width: 1200px;
 }
 
-
-.Header {
-    margin: 0;
-    padding: 0;
-    width: 1200px;
-    height: 4em;
-    background-color: #5182a8;
-    display: flex;
-}
-
-.Header div {
-    display: flex;
-    align-items: center;
-
-    justify-content: center;
-    padding-inline: 2em;
-}
-
-.Header div:hover {
-    background-color: #406885;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-.Header {
-    grid-area: header;
-    background-color: blue;
-}
-
-.Nav {
-    grid-area: nav;
-    background-color: #5b5b9d;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.nav-el{
-    width: 100%;
-    text-align: start;
-    margin-inline: 1em;
-}
-.Content {
-    grid-area: content;
-    background-color: #62bb46;
-}
